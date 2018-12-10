@@ -6,7 +6,6 @@ import { catchError } from 'rxjs/operators';
 import { forEach } from '@angular/router/src/utils/collection';
 import { Content } from '@angular/compiler/src/render3/r3_ast';
 import { map } from "rxjs/operators";
-import { Global } from "./global";
 
 @Injectable()
 export class PeopleService {

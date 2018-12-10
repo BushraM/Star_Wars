@@ -33,24 +33,16 @@ export class PeopleListComponent implements OnInit {
 
   getPeople(){
     this.peopleLists = this._peopleService.getPeople();
-    /*
-    .subscribe(data => this.peopleLists = data,
-              error => this.errorMsg = error);*/
   }
 
   addText(search_person_text){
     this.serachPerson = search_person_text.target.value;
-    //console.log(this.serachPerson);
   }
   
   getPerson(){
     let searchPerson = this.serachPerson;
 
     this.peopleLists = this._peopleService.getPerson(searchPerson);
-    /*
-    .subscribe(data => this.peopleLists = data,
-              error => this.errorMsg = error);*/
-
 
   }
 
